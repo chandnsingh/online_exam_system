@@ -2,6 +2,18 @@ import express from "express";
 const app = express();
 import dotenv from "dotenv";
 dotenv.config();
+import connectDB from "./connection/connection.js";
+import cors from "cors";
+import AuthRoutes from "./Routes/AuthRoutes.js";
+import ExamRoutes from "./Routes/ExamRoutes.js";
+connectDB();
+
+app.use(cors());
+app.use(express.json());
+
+// Routes
+app.use('/api/auth', AuthRoutes);
+app.use('/api/exams',ExamRoutes);
 
 
 app.get("/", (req, res) => {
