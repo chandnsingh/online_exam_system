@@ -27,12 +27,15 @@ router.get('/:id', async (req, res) => {
 
 // Create exam (Admin only)
 router.post('/', authenticationToken, async (req, res) => {
-  if (req.user.role !== 'admin') {
-    return res.status(403).json({ message: 'Admin access required' });
+  if (req.user.role !== 'admin' && req.user.role !== 'teacher') {
+    return res.status(403).json({ message: 'Unauthorized access' });
   }
 
   try {
-    const newExam = new Exam(req.body);
+    const newExam = new Exam({
+      ...req.body,
+      createdBy: req.user.id
+    });
     await newExam.save();
     res.status(201).json(newExam);
   } catch (err) {

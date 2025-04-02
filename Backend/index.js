@@ -6,6 +6,9 @@ import connectDB from "./connection/connection.js";
 import cors from "cors";
 import AuthRoutes from "./Routes/AuthRoutes.js";
 import ExamRoutes from "./Routes/ExamRoutes.js";
+import QuestionRoutes from './Routes/QuestionRoutes.js';
+import StudentRoutes from './Routes/StudentRoutes.js';
+import TeacherRoutes from './Routes/TeacherRoutes.js';
 connectDB();
 
 app.use(cors());
@@ -14,6 +17,9 @@ app.use(express.json());
 // Routes
 app.use('/api/auth', AuthRoutes);
 app.use('/api/exams',ExamRoutes);
+app.use('/api/exams', QuestionRoutes);
+app.use('/api/student', StudentRoutes);
+app.use('/api/teacher', TeacherRoutes);
 
 
 app.get("/", (req, res) => {

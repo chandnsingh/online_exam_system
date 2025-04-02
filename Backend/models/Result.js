@@ -11,6 +11,25 @@ const resultSchema = new mongoose.Schema({
     ref: 'Exam',
     required: true
   },
+  answers: [{
+    question: { 
+      type: mongoose.Schema.Types.ObjectId, 
+      ref: 'Question', 
+      required: true 
+    },
+    selectedOption: { 
+      type: String, 
+      required: true 
+    },
+    isCorrect: { 
+      type: Boolean, 
+      required: true 
+    },
+    marksObtained: { 
+      type: Number, 
+      required: true 
+    }
+  }],
   score: {
     type: Number,
     required: true
@@ -21,4 +40,4 @@ const resultSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('Result', resultSchema);
+export default mongoose.model('Result', resultSchema);
