@@ -14,7 +14,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-// Routes
+
 app.use('/api/auth', AuthRoutes);
 app.use('/api/exams',ExamRoutes);
 app.use('/api/exams', QuestionRoutes);
