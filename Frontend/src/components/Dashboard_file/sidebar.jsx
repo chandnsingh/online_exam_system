@@ -1,7 +1,7 @@
 function Sidebar(){
     return <>
         <div className="sidebar">
-       <aside class="flex flex-col w-72 h-screen px-4 py-8 overflow-y-auto bg-gradient-to-bl from-blue-200 to-purple-200 border-r">
+       <aside class="flex flex-col w-72 h-screen px-4 py-8 overflow-y-auto bg-white border-r">
     <a href="#">
         <img class="w-auto h-6 sm:h-7" src="https://merakiui.com/images/logo.svg" alt="" />
     </a>
@@ -18,28 +18,28 @@ function Sidebar(){
 
     <div class="flex flex-col justify-between flex-1 mt-6">
         <nav>
-            <a class="flex items-center px-4 py-2 text-black bg-[#baa4e1] rounded-md" href="#">
+            <a class="flex items-center px-4 py-2 text-black bg-[#e3d7f9] rounded-md" href="#">
                 <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/8899/8899687.png" alt="" />
                 <span class="mx-4 font-semibold">Dashboard</span>
             </a>
-            <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300  rounded-md hover:bg-[#baa4e1] hover:scale-110" href="#">
+            <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300  rounded-md hover:bg-[#e3d7f9] hover:scale-110" href="#">
                 <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/3033/3033143.png" alt="" />
                 <span class="mx-4 font-semibold">Profile</span>
                         </a>
                         
-            <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300 rounded-md hover:bg-[#baa4e1] hover:scale-110" href="#">
+            <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300 rounded-md hover:bg-[#e3d7f9] hover:scale-110" href="#">
                <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/4509/4509274.png" alt="" />
                 <span class="mx-4 font-semibold">Subjects</span>
                         </a>
 
-                         <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300 rounded-md hover:bg-[#baa4e1] hover:scale-110" href="#">
+                         <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300 rounded-md hover:bg-[#e3d7f9] hover:scale-110" href="#">
                 <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/9913/9913467.png" alt="" />
                 <span class="mx-4 font-semibold">Exams</span>
                         </a>
                         
                     
                         
-                         <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300 rounded-md hover:bg-[#baa4e1] hover:scale-110" href="#">
+                         <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300 rounded-md hover:bg-[#e3d7f9] hover:scale-110" href="#">
                 <img className ="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/9913/9913576.png" alt="" />
                 <span class="mx-4 font-semibold">Result</span>
                         </a>
@@ -52,7 +52,7 @@ function Sidebar(){
                          <hr class="my-6  dark:border-gray-900" />
 
                         
-                         <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300  rounded-md hover:bg-[#baa4e1] hover:scale-110" href="#">
+                         <a class="flex items-center px-4 py-2 mt-5 text-black transition-transform duration-300  rounded-md hover:bg-[#e3d7f9] hover:scale-110" href="#">
                 <img className ="h-5 w-5" src=" https://cdn-icons-png.flaticon.com/128/3953/3953226.png" alt="" />
                 <span class="mx-4 font-semibold">Setting</span>
                         </a>
